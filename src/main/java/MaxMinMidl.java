@@ -1,6 +1,3 @@
-import java.lang.reflect.Array;
-import java.util.Arrays;
-
 public class MaxMinMidl {
 
     public int[] arrayResult(int[] arrayGiven) {
