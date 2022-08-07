@@ -38,7 +38,7 @@ public class OddEvenTest {
 
     @Test
     public void testOddEven4() {
-        int number = 2147483647 + 1;
+        long number = 2147483647L + 1;
         String expectedResult = "Undefined";
 
         OddEven oddEven = new OddEven();
@@ -49,7 +49,7 @@ public class OddEvenTest {
 
     @Test
     public void testOddEven5() {
-        int number = - 2147483648 - 1;
+        long number = - 2147483648L - 1;
         String expectedResult = "Undefined";
 
         OddEven oddEven = new OddEven();
@@ -60,8 +60,8 @@ public class OddEvenTest {
 
     @Test
     public void testOddEven6() {
-        int number = 2147483647 + 2;
-        String expectedResult = "Odd";
+        long number = 2147483647L + 2;
+        String expectedResult = "Undefined";
 
         OddEven oddEven = new OddEven();
         String actualResult = oddEven.oddEven(number);
@@ -71,7 +71,7 @@ public class OddEvenTest {
 
     @Test
     public void testOddEven7() {
-        int number = 2147483647 - 1;
+        long number = 2147483647L - 1;
         String expectedResult = "Even";
 
         OddEven oddEven = new OddEven();
