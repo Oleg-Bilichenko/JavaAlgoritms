@@ -1,7 +1,7 @@
 import org.junit.Assert;
 import org.junit.Test;
 
-public class MaxMinMidlTest {
+public class  MaxMinMidlTest {
 
     @Test
     public void testMaxMinMidlTest() {
@@ -46,4 +46,49 @@ public class MaxMinMidlTest {
 
         Assert.assertArrayEquals(expectedResult, actualResult);
     }
+
+    @Test
+    public void testMaxMinMidlTest4() {
+        int[] arrayGiven = {1};
+        int[] expectedResult = {1, 1, 1};
+
+        MaxMinMidl maxMinMidl = new MaxMinMidl();
+        int[] actualResult = maxMinMidl.arrayResult(arrayGiven);
+
+        Assert.assertArrayEquals(expectedResult, actualResult);
+    }
+
+    @Test
+    public void testMaxMinMidlTest5() {
+        int[] arrayGiven = {1, 2};
+        int[] expectedResult = {2, 1, 1};
+
+        MaxMinMidl maxMinMidl = new MaxMinMidl();
+        int[] actualResult = maxMinMidl.arrayResult(arrayGiven);
+
+        Assert.assertArrayEquals(expectedResult, actualResult);
+    }
+
+    @Test
+    public void testMaxMinMidlTest6() {
+        int[] arrayGiven = {};
+        int[] expectedResult = null;
+
+        MaxMinMidl maxMinMidl = new MaxMinMidl();
+        int[] actualResult = maxMinMidl.arrayResult(arrayGiven);
+
+        Assert.assertArrayEquals(expectedResult, actualResult);
+    }
+
+    @Test
+    public void testMaxMinMidlTest7() {
+        int[] arrayGiven = null;
+        int[] expectedResult = null;
+
+        MaxMinMidl maxMinMidl = new MaxMinMidl();
+        int[] actualResult = maxMinMidl.arrayResult(arrayGiven);
+
+        Assert.assertArrayEquals(expectedResult, actualResult);
+    }
+
 }
