@@ -45,4 +45,18 @@ public class AscendingSequenceTest {
         Assert.assertArrayEquals(expectedResult, actualResult);
     }
 
+    @Test
+    public void testAscendingSequence4() {
+
+        int startNumber = 18;
+        int endNumber = 3;
+        int step = 3;
+        int[] expectedResult = {3, 6, 9, 12, 15, 18};
+
+        AscendingSequence ascendingSequence = new AscendingSequence();
+        int[] actualResult = ascendingSequence.ascendingSequence(startNumber, endNumber, step);
+
+        Assert.assertArrayEquals(expectedResult, actualResult);
+    }
+
 }

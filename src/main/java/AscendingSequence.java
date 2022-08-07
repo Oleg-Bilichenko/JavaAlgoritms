@@ -15,12 +15,10 @@ public class AscendingSequence {
         int[] arreyResult = new int[(endNumber - startNumber)/step + 1];
         for (int i = startNumber - startNumber; i < ((endNumber - startNumber)/step + 1); i++) {
             arreyResult[i] = newnumber;
-            newnumber += 5;
+            newnumber += step;
         }
 
         System.out.println(Arrays.toString(arreyResult));
         return arreyResult;
     }
-
-
 }
