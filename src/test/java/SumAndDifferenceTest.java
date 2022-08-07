@@ -26,8 +26,19 @@ public class SumAndDifferenceTest {
     }
 
     @Test
-    public void testzero() {
+    public void testZero() {
         int n = 0;
+        int expectedResult = 1;
+
+        SumAndDifference sumAndDifference = new SumAndDifference();
+        int actualResult = sumAndDifference.calculationResult(n);
+
+        Assert.assertEquals(expectedResult, actualResult);
+    }
+
+    @Test
+    public void testOne() {
+        int n = 1;
         int expectedResult = 0;
 
         SumAndDifference sumAndDifference = new SumAndDifference();
