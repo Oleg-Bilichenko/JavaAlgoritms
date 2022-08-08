@@ -1,14 +1,17 @@
 public class NumberComparison {
+/*
 
     public int compareNumbers(int firstNum, int secondNum) {
 
-        int number = 0;
-        if (firstNum < secondNum) {
-            number = -1;
-        } else if (firstNum > secondNum) {
-            number = 1;
+        if (firstNum == secondNum) {
+            return 0;
         }
-
-        return number;
+        return (firstNum > secondNum) ? 1 : -1; // Ternary Operator
     }
+*/
+
+    public int compareNumbers(int firstNum, int secondNum) {
+        return Integer.compare(firstNum, secondNum);
+    }
+
 }

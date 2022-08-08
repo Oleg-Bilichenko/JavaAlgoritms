@@ -1,11 +1,16 @@
 public class PositiveNegative {
 
-    public boolean getPositiveNegative(int number) {
-        boolean resultNumber = true;
-        if (number < 0) {
-            resultNumber = false;
-        }
+/*    public boolean getPositiveNegative(int number) {
 
-        return resultNumber;
+        if (number < 0) {
+            return false;
+        }
+        return true;
     }
+ */
+
+    public boolean getPositiveNegative(int number) {
+        return (number >= 0);
+    }
+
 }
